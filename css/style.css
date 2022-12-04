@@ -1,0 +1,121 @@
+body {
+    background-color: hsl(217, 54%, 11%); 
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    height: 100vh;  
+}
+
+main {
+    background-color: hsl(216, 50%, 16%);
+    box-sizing: border-box;
+    width: 22em;
+    height: 37.5em;
+    border-radius: 15px; 
+    font-family: 'Outfit', sans-serif; 
+    position: relative;   
+}
+
+
+.main.-img {
+    width: 19em;
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    border-radius: 10px; 
+}
+
+.main.-text {
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    margin-left: 1.5rem;
+    font-size: 25px;
+}
+
+.main.-textClean {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    margin-left: 1.3em;
+    font-size: 18px;  
+}
+
+.main.-alignOut {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1.5em; 
+    margin-right: 1.5em; 
+}
+
+.main.-alignIn {
+    display: flex;
+    flex-direction: initial;
+    align-items: center;    
+}
+
+.main.-priceEth {
+    color: hsl(178, 100%, 50%);
+    margin-left: 7px;
+    font-size: 18px;    
+}
+
+.main.-timeLeft {
+    color: hsl(215, 51%, 70%);
+    margin-left: 7px;
+    font-size: 18px;
+}
+
+.main::before {
+    content: '';
+    position: absolute;
+    bottom: 60px;
+    left: 1.5em;
+    top:517px;
+    display: block;
+    height: 1px;
+    width: 292px;
+    background-color: hsl(215, 32%, 27%);
+}
+
+.avatar {
+    width: 30px;
+}
+
+.alignAvatar {
+    display: flex; 
+    align-items: center;
+    margin-left: 1em;
+    position: relative; 
+}
+
+.alignAvatar.-color {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    margin-left: 15px;
+    font-size: 18px;
+    padding: 0;
+
+}
+
+.alignAvatar.-colorSecond {
+    font-weight: 300;
+    color: hsl(0, 0%, 100%);
+    margin-left: 5px;
+    font-size: 18px;
+
+}
+
+footer { 
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+}
+  
+.footer.-link { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+
