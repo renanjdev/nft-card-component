@@ -6,6 +6,7 @@ body {
     justify-content: center;
     flex-direction: column; 
     height: 100vh;  
+    
 }
 
 main {
@@ -21,10 +22,15 @@ main {
 
 .main.-img {
     width: 19em;
-    margin-top: 1.5em;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin: 1.5em;
     border-radius: 10px; 
+    transition: 0.2s ease;
+    backface-visibility: hidden;
+    
+}
+
+.main.-img:hover {
+    opacity: 0.5;
 }
 
 .main.-text {
@@ -32,13 +38,21 @@ main {
     color: hsl(0, 0%, 100%);
     margin-left: 1.5rem;
     font-size: 25px;
+    text-decoration: none;
+}
+
+.main.-text:hover {
+    color: hsl(178, 100%, 50%);
 }
 
 .main.-textClean {
     font-weight: 300;
     color: hsl(215, 51%, 70%);
     margin-left: 1.3em;
+    margin-top: 1em;
     font-size: 18px;  
+
+    
 }
 
 .main.-alignOut {
@@ -72,7 +86,7 @@ main {
     position: absolute;
     bottom: 60px;
     left: 1.5em;
-    top:517px;
+    top:527px;
     display: block;
     height: 1px;
     width: 292px;
@@ -81,6 +95,8 @@ main {
 
 .avatar {
     width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
 }
 
 .alignAvatar {
@@ -96,7 +112,6 @@ main {
     margin-left: 15px;
     font-size: 18px;
     padding: 0;
-
 }
 
 .alignAvatar.-colorSecond {
@@ -104,18 +119,65 @@ main {
     color: hsl(0, 0%, 100%);
     margin-left: 5px;
     font-size: 18px;
-
+    text-decoration: none;
 }
+    
+.alignAvatar.-colorSecond:hover {
+    color: hsl(178, 100%, 50%);      
+}
+
 
 footer { 
     font-size: 11px; 
     text-align: center; 
     color: white;
+    padding-top: 1em;
 }
   
 .footer.-link { 
     color: hsl(228, 45%, 44%); 
     text-decoration: none;
+}
+
+
+@media screen and (max-width: 375px) {
+
+    main {
+        width: 18em;
+        height: 31em;
+    }  
+    
+    .main.-img {
+        width: 15em;
+        margin: 1.5em;
+    }    
+
+    .main.-text {
+        font-weight: 600;
+        margin-left: 1.4rem;
+        font-size: 20px;
+    }
+  
+    .main::before {
+        left: 1.1em;
+        top: 426px;
+        width: 250px;  
+    }
+
+    .avatar {
+        width: 25px;
+    }
+    
+    .alignAvatar {
+        display: flex; 
+        align-items: center;
+        margin-left: 1em;
+        position: relative; 
+    }
+    
+    .main.-priceEth, .main.-textClean, .main.-timeLeft, .alignAvatar.-color, .alignAvatar.-colorSecond {   
+        font-size: 14px;
+    }
 }
 
 
